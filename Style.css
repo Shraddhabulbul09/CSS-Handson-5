@@ -1,0 +1,199 @@
+*{
+    background-color: yellow;
+}
+.text{
+    text-align: center;
+ }
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.row1{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 20px;
+
+    animation: skew1 3s infinite alternate;
+}
+@keyframes skew1{
+     0%{
+        transform: skew(-30deg);
+     }
+     100%{
+        transform: skew(30deg);
+     }
+}
+.row2{
+    width: 100px;
+    height: 100px;
+    background-color:grey;
+    margin: 20px;
+
+    animation: skew2 3s infinite alternate;
+
+}
+@keyframes skew2 {
+    to {
+        transform: skew(-30deg);
+    }
+    from{
+        transform: skew(30deg);
+    }
+}
+.row3{
+    width: 100px;
+    height: 100px;
+    background-color:blueviolet ;
+    margin: 20px;
+
+    animation: rotate 3s infinite alternate;
+}
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.row4{
+    width: 100px;
+    height: 100px;
+    background-color:grey ;
+    margin: 20px;
+
+    animation: sample 3s infinite alternate;
+}
+@keyframes sample{
+       0%{
+        transform: scale(1,1);
+       }
+       100%{
+        transform: scale(1,1.5);
+       }
+       
+}
+.row5{
+    width: 100px;
+    height: 100px;
+    background-color:brown ;
+    margin: 20px;
+
+    animation: sample2 3s infinite alternate;
+}
+@keyframes sample2{
+    100%{
+        transform: scale(1,1);
+       }
+    0%{
+        transform: scale(1.5,1);
+       }
+}
+.row6{
+    width: 100px;
+    height: 100px;
+    background-color:grey ;
+    margin: 20px;
+
+    animation: sample3 3s infinite alternate;
+   
+}
+@keyframes sample3{
+    100%{
+        transform: rotate(0deg);
+       }
+    0%{
+        transform: rotate(360deg);
+       }
+  /* transitionpage */
+} 
+.allbox{
+ position: absolute;
+ left: 40%;
+}
+.backbutton{
+    position: absolute;
+    top: 950px;
+    left: 45%;
+}
+.box1{
+    width: 100px;
+    height:100px;
+    background-color: greenyellow;
+    margin: 20px;
+    align-items: center;
+
+    transition:  all 2s linear ;
+}
+.box1:hover{
+    width: 300px;
+}
+.box2{
+    width: 100px;
+    height:100px;
+    background-color: greenyellow;
+    margin: 20px;
+
+    transition:  all 2s ;
+}
+.box2:hover{
+    width: 300px;
+    height: 300px;
+}
+.box3{
+    width: 100px;
+    height:100px;
+    background-color: greenyellow;
+    margin: 20px;
+
+    transition:  all 2s ease ;
+}
+.box3:hover{
+    width: 300px;
+}
+.box4{
+    width: 100px;
+    height:100px;
+    background-color: greenyellow;
+    margin: 20px;
+
+    transition:  all 2s ease-in ;
+}
+.box4:hover{
+    width: 300px;
+}
+.box5{
+    width: 100px;
+    height:100px;
+    background-color: greenyellow;
+    margin: 20px;
+
+    transition:  all 2s ease-out ;
+}
+.box5:hover{
+    width: 300px;
+}
+.box6{
+    width: 100px;
+    height:100px;
+    background-color: greenyellow;
+    margin: 20px;
+
+    transition:  all 2s ease-in-out ;
+}
+.box6:hover{
+    width: 300px;
+}
+.box7{
+    width: 100px;
+    height:100px;
+    background-color: greenyellow;
+    margin: 20px;
+
+    transition:  all 2s ease-in-out ;
+}
+.box7:hover{
+    width: 300px;
+}
